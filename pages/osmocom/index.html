@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/home-stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/home-validate.js"></script>
+    <title>netit test</title>
+    <!--     <style type="text/css">
+    #navbar {
+    background-color: rgba(17, 17, 17, 0);
+    }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container text-left">
+          <h1>&nbsp;</h1>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </header>
+    <nav id="navbar" class="navbar navbar-dark fixed-top navbar-expand-md ml-1 mr-2">
+      <span class="navbar-brand mb-0 h1"><img src="img/osmocom1.png"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mb-1" id="navbarSupportedContent">
+        <ul class="nav navbar-nav nav-tabs mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Contents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comingSoon.html">Coming soon</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn btn-light" href="register.html" role="button">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <section>
+          <h3 class="text-center pl-1 pr-1">The Osmocom project is an umbrella project regarding Open source mobile communications. This includes software and tools implementing a variety of mobile communication standards, including GSM, DECT, TETRA and others</h3>
+        </section>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-12 mt-3 mb-3">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center text-sm-right">Osmocom Baseband</h5>
+                <p class="card-text text-right">OsmocomBB is an Free Software / Open Source GSM Baseband software implementation. It intends to completely replace the need for a proprietary GSM baseband software, such as: drivers for the GSM analog and digital baseband, drivers for (integrated and external) peripherals, the GSM phone-side protocol stack, from layer 1 up to layer 3<br>In short: by using OsmocomBB on a compatible phone, you will be able to make and receive phone calls, send and receive SMS, etc. based on Free Software only.</p>
+                <p class="card-text text-center"><small class="text-muted"><a href="https://osmocom.org/projects/baseband/wiki#Overview">Learn more</a></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center text-sm-left">Cellular Network Infrastructure</h5>
+                <p class="card-text text-left">This is a project aiming to create a Free / Open Source Software, (A)GPL-licensed software implementations for the GSM/3GPP protocol stacks and network elements, preferably as pure software implementations running on general-purpose computers. All our software is available in source code form, to anyone. This is very contrary to classic telecom vendors, where every network element is implemented as proprietary hardware and software, without the ability to understand or modify them, and where each and every feature is subject to license fees.</p>
+                <p class="card-text text-center"><small class="text-muted"><a href="https://osmocom.org/projects/cellular-infrastructure/wiki">Learn more</a></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 mt-5">
+          <div class="container">
+            <div name="subscribeForm"class="form"action="#">
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="subscribeUserMail" "><small>Keep up to date with the latest news and developments on the projects. Subscribe now</small></label>
+                  <input id="subscribeUserMail" class="form-control form-control-sm " type="text" name="subscribeUserMail" placeholder="Email address" onblur="validateEmail(this);" />
+                  <p ><small id="field"></small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input id="submitBTN" class="btn btn-sm btn-info float-right" type="submit" value="Submit" name="submit" onlick="validateEmail()">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <h6 class="text-center">Credits</h6>
+          <div class="text-center">
+            <p><small>Header image taken from google, "GNU Project HD wallpaper"</small></p>
+            <p><small>Navbar logo taken from <a href="https://osmocom.org">OSMOCOM's official site</a></small></p>
+            <p><small>The text is from <a href="https://osmocom.org">OSMOCOM's official site</a></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/home-validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register-stylesheet.css">
+    <title>netit test</title>
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container text-left">
+          <h1>&nbsp;</h1>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md ml-1 mr-2">
+      <span class="navbar-brand mb-0 h1"><img src="img/osmocom1.png"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mb-1" id="navbarSupportedContent">
+        <ul class="nav navbar-nav nav-tabs mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Contents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comingSoon.html">Coming soon</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn btn-light" href="register.html" role="button">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <input class="form-control" id="searchInput" type="text" placeholder="Search in title and content.." onkeyup="myFunction()">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="test">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card mb-4 box-shadow border-dark">
+            <!-- card header -->
+            <div class="card-header d-flex align-items-center justify-content-center h-100">
+              <h2 class="my-0 font-weight-normal flex-grow-1">OsmocomBB</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+              <h5 class="card-title ">SDR PHY - (E)GPRS protocol stack implementation</h5>
+              GPRS <span class="font-italic">(General Packet Radio Service)</span> is a packet-switched cellular technology, which is used in 2G and 3G networks for transmitting IP packets to external networks such as the Internet. EGPRS stands for "Enhanced GPRS", a GPRS based technology that allows improved data transmission rates.<button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#more1">... show more</button>
+              <div class="collapse" id="more1">
+                The aim of this task is to get working mobile station implementation of GPRS protocol stack and extend the GSM burst transceiver part of the project with ability to send/receive GPRS and EGPRS signals.
+                <ul class="list-styled mt-1 mb-0">
+                  <li>physical layer (L1) modification in order to support packet switched communication (8-psk detection modulation and demodulation support for EGPRS, channel coding/decoding, TBF (Token Bucket Filter) scheduling)</li>
+                  <li>implementation of the higher protocol layers (RLC/MAC, LLC, SNDCP)</li>
+                  <li>composing a shared library of the existing GPRS related code in OsmcomBB</li>
+                  <li>implementation of the transmit capabilities</li>
+                  <li>implementation of host utilities (Packet capture (sniffer) utility, GPRS modem application)</li>
+                  <li>tests (unit tests, conformance tests)</li>
+                </ul>
+              </div>
+            </div>
+            <!-- footer -->
+            <div class="card-footer bg-transparent">
+              <small>Roadmap | <strong>OsmocomB</strong>ase<strong>B</strong>and</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card mb-4 box-shadow border-dark">
+            <!-- card header -->
+            <div class="card-header d-flex align-items-center justify-content-center h-100">
+              <h2 class="my-0 font-weight-normal flex-grow-1">OsmocomBB</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+              <h5 class="card-title ">SDR PHY - Extended SDR hardware compatibility</h5>
+              Currently the GSM burst transceiver used by the project works with UHD (Universal Hardware Deriver) compatible devices like Ettus USRPs and Fairwaves UmTRX. It is desirable to have support for at least one additional cheaper SDR devices (like LimeSDR or LimeSDR-Mini).<button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#more2">... show more</button>
+              <div class="collapse" id="more2">
+                <ul class="list-styled mt-1 mb-0">
+                  <li>implementing stream tags forwarding in GNU Radio blocks representing targeted SDR device(/s)</li>
+                  <li>porting of the L1 transceiver to targeted SDR platform(/s) (deliverable: source code, demonstration that it works)</li>
+                </ul>
+              </div>
+            </div>
+            <!-- footer -->
+            <div class="card-footer bg-transparent">
+              <small>Roadmap | <strong>OsmocomB</strong>ase<strong>B</strong>and</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card mb-4 box-shadow border-dark">
+            <!-- card header -->
+            <div class="card-header d-flex align-items-center justify-content-center h-100">
+              <h2 class="my-0 font-weight-normal flex-grow-1">OsmocomBB</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+              <h5 class="card-title ">SDR PHY - Frequency hopping</h5>
+              GPRS <span class="font-italic">A BTS (Base Transceiver Station) on the GSM radio interface may use frequency hopping, that poses additional difficulty to transmit and receive GSM signals on the mobile side. The aim of this subtask is to implement frequency hopping for a GSM mobile station.<br>
+                <button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#more3">... show more</button>
+                <div class="collapse" id="more3">
+                  <ul class="list-styled mt-1 mb-0">
+                    <li>implementing transmission of GSM bursts according to a hopping sequence (deliverables: code + plot(/s) showing frequency of transmitted bursts)</li>
+                    <li>implementing reception of GSM bursts that follows frequency hopping (deliverables: code + decoded messages from the signal with hopping)</li>
+                    <li>extending the control interface between gr-gsm and Osmocom-BB with ability to send/change hopping parameters (deliverable: code)</li>
+                    <li>testing the mobile station with a GSM BTS supporting frequency hopping (deliverable: protocol traces in Wireshark)</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- footer -->
+              <div class="card-footer bg-transparent">
+                <small>Roadmap | <strong>OsmocomB</strong>ase<strong>B</strong>and</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card mb-4 box-shadow border-dark">
+              <!-- card header -->
+              <div class="card-header d-flex align-items-center justify-content-center h-100">
+                <h2 class="my-0 font-weight-normal flex-grow-1">OsmocomBB</h2>
+              </div>
+              <!-- card body -->
+              <div class="card-body">
+                <h5 class="card-title ">SDR PHY - (E)GPRS protocol stack implementation</h5>
+                GPRS <span class="font-italic">(General Packet Radio Service)</span> is a packet-switched cellular technology, which is used in 2G and 3G networks for transmitting IP packets to external networks such as the Internet. EGPRS stands for "Enhanced GPRS", a GPRS based technology that allows improved data transmission rates.<button class="btn btn-link btn-md" type="button" data-toggle="collapse" data-target="#more4">... show more</button>
+                <div class="collapse" id="more4">
+                  The aim of this task is to get working mobile station implementation of GPRS protocol stack and extend the GSM burst transceiver part of the project with ability to send/receive GPRS and EGPRS signals.
+                  <ul class="list-styled mt-3 mb-4">
+                    <li>physical layer (L1) modification in order to support packet switched communication (8-psk detection modulation and demodulation support for EGPRS, channel coding/decoding, TBF (Token Bucket Filter) scheduling)</li>
+                    <li>implementation of the higher protocol layers (RLC/MAC, LLC, SNDCP)</li>
+                    <li>composing a shared library of the existing GPRS related code in OsmcomBB</li>
+                    <li>implementation of the transmit capabilities</li>
+                    <li>implementation of host utilities (Packet capture (sniffer) utility, GPRS modem application)</li>
+                    <li>tests (unit tests, conformance tests)</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- footer -->
+              <div class="card-footer bg-transparent">
+                <small>Roadmap | <strong>OsmocomB</strong>ase<strong>B</strong>and</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card mb-4 box-shadow border-dark">
+              <!-- card header -->
+              <div class="card-header d-flex align-items-center justify-content-center h-100">
+                <h2 class="my-0 font-weight-normal flex-grow-1">Cellular Network Infrastructure</h2>
+              </div>
+              <!-- card body -->
+              <div class="card-body">
+                <h5 class="card-title ">Virtual GSM Load Testing</h5>
+                GPRS <span class="font-italic">This is about development of Load Testing Setup to demonstrate OsmoBSC functionality and performance at >= 200 TRX, >= 100 BTS and thousands of MS.<button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#more5">... show more</button>
+                  <div class="collapse" id="more5">
+                    <ul class="list-styled mt-1 mb-0">
+                      <li>Development of primitive-based asynchronous interface to OsmocomBB âmobileâ program, together with script language (e.g. LUA) bindings for cellselection, location update, SMS and voice calls.</li>
+                      <li>Development of voice frame support to OsmocomBB virt_phy, OsmocomBB mobile and osmo-bts-virtual to simulate voice/user plane in addition to control/signaling plane.</li>
+                      <li>Development of software to manage (configure, start, monitor, stop) thousands of OsmocomBB mobile instances as well as hundreds of osmo-bts-virtual instances</li>
+                      <li>Creation + Documentation of corresponding test suite for automatic execution of load testing</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- footer -->
+                <div class="card-footer bg-transparent">
+                  <small>Roadmap | <strong>C</strong>ellular <strong>N</strong>etwork <strong>I</strong>nfrastructure</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+              <div class="card mb-4 box-shadow border-dark">
+                <!-- card header -->
+                <div class="card-header d-flex align-items-center justify-content-center h-100">
+                  <h2 class="my-0 font-weight-normal flex-grow-1">Cellular Network Infrastructure</h2>
+                </div>
+                <!-- card body -->
+                <div class="card-body">
+                  <h5 class="card-title ">3GPP <strong>L</strong>ocal <strong>C</strong>all <strong>L</strong>ocal <strong>S</strong>witch</h5>
+                  GPRS <span class="font-italic">In the classic 3GPP architecture, all calls go from BTS to BSC to MSC, only then to go back all the same way in case the second call leg is also in the same cell. Particularly in case of<button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#more6">... show more</button>
+                    <div class="collapse" id="more6">
+                      statellite or other expensive/slow back-haul this is far from ideal.<br>Using LCLS, a BSC can know which of the two call legs belong to one call, and can then directly bridge the RTP/media locally. <button class="btn btn-link btn-md float-right" type="button" data-toggle="collapse" data-target="#affectedMessages">List of affected messages</button>
+                      <div class="collapse" id="affectedMessages">
+                        <ul class="list-styled mt-1 mb-0">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- footer -->
+                  <div class="card-footer bg-transparent">
+                    <small>Roadmap | <strong>C</strong>ellular <strong>N</strong>etwork <strong>I</strong>nfrastructure</small>
+                  </div>
+                </div>
+              </div>
+              <!-- end of row -->
+            </div>
+          </div>
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <!-- <script>
+          $(document).ready(function(){
+          $("#searchInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#page *").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+          });
+          });
+          </script> -->
+          <!-- <script type="text/javascript">
+          $('#searchInput').change( function () {
+          $('.card').show();
+          var filter = $(this).val(); // get the value of the input, which we filter on
+          $('.container-fluid').find(".card-title:not(:contains(" + filter + "))").('#test').css('display','none');
+          });
+          </script> -->
+          <script type="text/javascript">
+          function myFunction() {
+          var input, filter, cards, cardContainer, h5, title, cardContent, i;
+          input = document.getElementById("searchInput");
+          filter = input.value.toUpperCase();
+          cardContainer = document.getElementById("test");
+          cards = cardContainer.getElementsByClassName("card");
+          for (i = 0; i < cards.length; i++) {
+          title = cards[i].querySelector(".card-header h2");
+          cardContent = cards[i].querySelector(".card-body");
+          if (title.innerText.toUpperCase().indexOf(filter) > -1
+          ||
+          cardContent.innerText.toUpperCase().indexOf(filter) > -1) {
+          cards[i].style.display = "";
+          } else {
+          cards[i].style.display = "none";
+          }
+          }
+          }
+          </script>
+        </body>
+      </html>

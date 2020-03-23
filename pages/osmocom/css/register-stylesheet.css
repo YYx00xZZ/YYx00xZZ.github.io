@@ -1,0 +1,10 @@
+.jumbotron {
+    background: url('debpaper.jpg');
+    background-size: 100%;
+	background-position: center;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #DDDDDD;
+    font-size: 1.07em;
+}
